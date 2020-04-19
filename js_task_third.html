@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS THIRD TASK</title>
+</head>
+
+<body>
+<script>
+
+    function yuGiOhStr(num){
+      
+        const myArray = [];
+        let result;
+        
+        for(let i = 1; i <= num; i++){
+            
+            if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0){
+                result = "yu-gi-oh";
+            } else if (i % 3 === 0 && i % 5 === 0) {
+                result = "gi-oh";
+            } else if (i % 2 === 0 && i % 5 === 0){
+                result = "yu-oh";
+            } else if (i % 2 === 0 && i % 3 === 0){
+                result = "yu-gi";
+            } else if (i % 2 === 0){
+                result = "yu";
+            } else if (i % 3 === 0){
+                result = "gi";
+            } else if (i % 5 === 0){
+               result = "oh";
+            } else{
+                result = i;
+            }
+            
+            myArray.push(result);
+    
+        };
+        
+            console.log(myArray);
+            return myArray;                          
+    };
+    yuGiOhStr(100);
+    yuGiOhStr(28);
+       
+</script>
+</body>
+</html>
+    
